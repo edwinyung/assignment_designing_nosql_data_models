@@ -1,0 +1,19 @@
+* username: String
+    * Must contain only word characters
+* password: String
+    * Must be at least 8 characters
+* email: String
+    * Must contain an @ symbol
+*birthday : Date(), Visibility: boolean
+*Gender : String, Visibility : boolean
+  *Male, Female, Other
+*Phone number : number, Visibility : boolean
+  *10 digits long
+*Location: city : String,Visibility : boolean
+  *3 characters in length
+*Location: state : String
+  *2 characters long
+*Location: Country : String
+  * 3 characters long country code
+*Description: String
+  *100 characters in length

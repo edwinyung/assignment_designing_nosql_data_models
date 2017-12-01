@@ -1,0 +1,30 @@
+You're building a backend for a university that requires students to be able to login.
+Once logged in, the students can view the exam grades for their classes.
+They should be able to view results by semester.
+Each semester should only show the classes in which that student is enrolled that semester.
+
+Collections:
+------------
+*login
+  *userName : String
+    *Limited to 10 characters, only lowercase a-z
+*Password: String
+  *Alpha-numeric limited to 20 characters
+
+*classes
+  *ClassNumber : String
+    *Alpha-numeric
+  *Teacher : String
+  *ClassGrades : {StudentName: FinalGrade}
+  *EnrollmentStatus: {StudentName:Status}
+
+*semester
+  *ClassesEnrolled: {StudentName: ClassesEnrolled(Array)}
+  *GPA: {StudentName: SemesterGPA}
+
+*StudentProfile
+  *Name: String
+    *Limited to 20 characters
+  *Date Of Birth: Date()
+  *Classes: {className: Grade}
+  *Semester: {semesterName: [classnames]}
