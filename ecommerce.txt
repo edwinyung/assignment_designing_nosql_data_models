@@ -1,0 +1,23 @@
+Your eCommerce business needs to keep track of products and their prices. The products each belong to a department. The business needs to keep track of revenue as product prices change over time. The business also needs to keep track of receipts of transactions and the number of units each product has in stock.
+
+*Department
+  departments: Array of strings
+
+*Products
+  productName: String
+  productPrice: Float
+  productDepartment: String in departments
+  unitStock: Number
+
+*Transactions
+  receipts: { transactionName:
+                { productName: productPrice,
+                  units: {number of units sold: some Number,
+                          unitStock: decrement unitStock by number of units sold,
+                          revenue: productPrice multiplied by units sold }
+                }
+            }
+
+*Business
+  Revenue: Number
+    Sum of revenue in transactions
